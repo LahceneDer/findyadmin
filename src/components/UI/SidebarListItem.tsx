@@ -15,9 +15,12 @@ const SidebarListItem: React.FC<ISidebarListItemProps> = ({
   ItemIcon,
 }) => {
   return (
-    <Link to={`${route}`} style={{ textDecoration: "none" }}>
-      <ListItem>
-        <ListItemIcon> {ItemIcon} </ListItemIcon>
+    <Link
+      to={`${route}`}
+      style={{ textDecoration: "none", color: "white", textAlign: "center" }}
+    >
+      <ListItem style={{ color: "white" }} className="sidebar-list-item">
+        <ListItemIcon style={{ color: "white" }}> {ItemIcon} </ListItemIcon>
         <ListItemText primary={`${itemText}`} />
       </ListItem>
     </Link>

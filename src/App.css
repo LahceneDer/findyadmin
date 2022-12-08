@@ -1,0 +1,16 @@
+.dashboard-sidebar {
+  background-color: var(--main-dark-color);
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(1, 158, 255, 1) 0px 3px 8px;
+}
+
+.sidebar-list-item:hover * {
+  color: var(--main-dark-color);
+  transition: ease-in-out 0.2s;
+}
+.sidebar-list-item:hover {
+  background-color: white;
+  color: var(--main-dark-color);
+  transition: ease-in-out 0.2s;
+}

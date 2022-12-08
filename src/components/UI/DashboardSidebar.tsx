@@ -7,6 +7,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ArticleIcon from "@mui/icons-material/Article";
 import CategoryIcon from "@mui/icons-material/Category";
 import { routes } from "../../utils/routes";
+import { colors } from "../../utils/variables";
 
 const DashboardSidebar = () => {
   return (
@@ -14,13 +15,25 @@ const DashboardSidebar = () => {
       container
       direction="column"
       justifyContent="flex-start"
-      alignItems="stretch"
+      alignItems="center"
+      className="dashboard-sidebar"
       spacing={0}
+      style={{ height: "90vh" }}
     >
-      <Typography variant="button" color="initial" textAlign="center">
-        Findy Dashboard
+      <Typography
+        variant="button"
+        mt={2}
+        sx={{
+          color: `${colors.mainColor}`,
+          backgroundColor: "white",
+          width: "100%",
+          padding: "2%",
+        }}
+        textAlign="center"
+      >
+        <b> Findy Dashboard</b>
       </Typography>
-      <List sx={{ width: "100%", bgcolor: "background.paper" }}>
+      <List sx={{ width: "100%" }}>
         <SidebarListItem
           key={routes.DASHBOARD_HOME}
           ItemIcon={<HomeIcon />}
